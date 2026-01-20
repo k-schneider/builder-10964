@@ -1,12 +1,22 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  imports: [RouterOutlet, RouterLink],
+  template: `
+    <header>
+      <nav>
+        <ul>
+          <li><a routerLink="/my-page">My Page</a></li>
+          <li><a routerLink="/builder-page">Builder Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <router-outlet />
+    </main>
+  `,
 })
 export class App {
-  protected readonly title = signal('builder10964');
 }
