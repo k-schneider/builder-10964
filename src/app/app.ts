@@ -9,7 +9,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
       <nav>
         <ul>
           <li><a routerLink="/my-page">My Page</a></li>
-          <li><a routerLink="/builder-page">Builder Page</a></li>
+          <li><a routerLink="/builder-10964">Builder Page</a></li>
         </ul>
       </nav>
     </header>
